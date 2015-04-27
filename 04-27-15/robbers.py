@@ -1,18 +1,17 @@
 #!/usr/bin/python
-import string
+import string, sys
 
 word = raw_input()
-
-new_word = []
 
 vowels = ["a", "e", "i", "o", "u", "y"]
 punc = set(string.punctuation)
 spc = set(string.whitespace)
 
 for letter in word:
-        new_word.append(letter)
+        sys.stdout.write(letter)
         if letter.lower() not in vowels and letter not in punc and letter not in spc:
-                str = "o" + letter.lower()
-                new_word.append(str)
+                sys.stdout.write('o')
+                sys.stdout.write(letter.lower())
 
-print ''.join(new_word)
+sys.stdout.write('\n')
+sys.stdout.flush()
