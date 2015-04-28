@@ -1,15 +1,14 @@
 #!/usr/bin/python
+# -- coding: utf-8 --
 import string, sys
 
 word = raw_input()
 
-vowels = ["a", "e", "i", "o", "u", "y"]
-punc = set(string.punctuation)
-spc = set(string.whitespace)
+exclude = set("aeiouyåöä").union(set(string.punctuation).union(set(string.whitespace)))
 
 for letter in word:
         sys.stdout.write(letter)
-        if letter.lower() not in vowels and letter not in punc and letter not in spc:
+        if letter.lower() not in exclude:
                 sys.stdout.write('o')
                 sys.stdout.write(letter.lower())
 
