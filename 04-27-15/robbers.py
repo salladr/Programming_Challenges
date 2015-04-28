@@ -1,14 +1,13 @@
 #!/usr/bin/python
-# -- coding: utf-8 --
 import string, sys
 
 word = raw_input()
 
-exclude = set("aeiouyåöä").union(set(string.punctuation).union(set(string.whitespace)))
+consonants = set('bcdfghjklmnpqrstvwxz')
 
 for letter in word:
         sys.stdout.write(letter)
-        if letter.lower() not in exclude:
+        if letter.lower() in consonants:
                 sys.stdout.write('o')
                 sys.stdout.write(letter.lower())
 
