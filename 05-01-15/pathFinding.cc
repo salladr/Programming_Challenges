@@ -29,7 +29,7 @@ void findPath( int startY, int startX, vector< vector< bool > > &maze, string pa
 					else if ( dir == SOUTH ) currentY += 1;
 					else if ( dir == WEST ) currentX -= 1;
 
-					if ( !maze[ currentY ][ currentX ] ) return;
+					if ( !maze.at( currentY ).at( currentX ) ) return;
 				}
 			}
 			if ( path[i] == 'r' ) dir = static_cast< Direction >( ( dir + 1 ) % 4 );
