@@ -167,18 +167,18 @@ Space: Move right hand from M (effort: 1)
 Shift: Move left hand from Z (effort: 1)
 Q: Move right hand from Space (effort: 10)
 Shift: Use left hand again
-F: Move left hand from Shift (effort: 4)
-P: Move left hand from F (effort: 7)
-Shift: Move left hand from P (effort: 2)
-R: Move right hand from Q (effort: 3)
+F: Move right hand from Q (effort: 4)
+P: Move right hand from F (effort: 7)
 Shift: Use left hand again
-K: Move left hand from Shift (effort: 3)
-B: Move left hand from K (effort: 3)
-I: Move left hand from B (effort: 4)
-Space: Move left hand from I (effort: 3)
-Shift: Move left hand from Space (effort: 3)
-Q: Move right hand from R (effort: 3)
+R: Move right hand from P (effort: 6)
+Shift: Use left hand again
+K: Move right hand from R (effort: 5)
+B: Move right hand from K (effort: 3)
+I: Move right hand from B (effort: 4)
+Space: Move right hand from I (effort: 3)
+Shift: Use left hand again
+Q: Move right hand from Space (effort: 10)
 Y: Move right hand from Q (effort: 5)
-C: Move right hand from Y (effort: 4)
-N: Move left hand from Shift (effort: 3)
-Total effort: 81
+C: Move left hand from Shift (effort: 3)
+N: Move left hand from C (effort: 3)
+Total effort: 87
