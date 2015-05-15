@@ -52,5 +52,6 @@ int main() {
 			}
 		}
 	}
+	cout.precision(20);
 	cout << totalDistance << endl;
 }
