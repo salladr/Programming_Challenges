@@ -1,4 +1,4 @@
-// Problem found at: http://www.reddit.com/r/dailyprogrammer/comments/3629st/20150515_challenge_214_hard_chester_the_greedy/
+Problem found at: http://www.reddit.com/r/dailyprogrammer/comments/3629st/20150515_challenge_214_hard_chester_the_greedy/
 
 # Description
 
@@ -24,7 +24,7 @@ A small note: distance is calculated using the standard plane distance formula. 
 
     sqrt((x1-x2)^2 + (y1-y2)^2)
 
-#Formal inputs &amp;amp; outputs
+#Formal inputs &amp; outputs
 
 ## Inputs
 
@@ -38,7 +38,7 @@ Note that most of the inputs I will provide will be in external text files, as t
 
 You will output a single line with a single number on it, giving the total length of Chester's journey. Remember that he always starts at (0.5, 0.5), before going for the first treat. 
 
-#Sample inputs &amp;amp; outputs
+#Sample inputs &amp; outputs
 
 ##Input 1
     6
