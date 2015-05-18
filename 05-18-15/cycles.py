@@ -5,17 +5,19 @@ n = raw_input()
 
 # Using Floyd's algorithm for cycle detection
 
-tortoise = sum( [ int( digit )**b for digit in str( n ) ] )
-hare = sum( [ int( digit )**b for digit in str( tortoise ) ] )
+def digit_sum( number ):
+	return sum( [ int( digit )**b for digit in str( number ) ] )
+
+tortoise = digit_sum( n )
+hare = digit_sum( tortoise )
 
 while tortoise != hare:
-	tortoise = sum( [ int( digit )**b for digit in str( tortoise ) ] )
-	hare_temp = sum( [ int( digit )**b for digit in str( hare ) ] )
-	hare = sum( [ int( digit )**b for digit in str( hare_temp ) ] )
+	tortoise = digit_sum( tortoise )
+	hare = digit_sum( digit_sum( hare ) )
 
-hare = sum( [ int( digit )**b for digit in str( tortoise ) ] )
+hare = digit_sum( tortoise )
 while tortoise != hare:
 	print hare,
-	hare = sum( [ int( digit )**b for digit in str( hare ) ] )
+	hare = digit_sum( hare )
 
 print tortoise
